@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pergunta sobre Trabalho</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link para Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Envie a sua Pergunta sobre Trabalho de Bartolomeu João Lé Costa</h2>
+      <p>
+        Estaou aqui para ajudar! Deixe a sua pergunta e responderei o mais breve
+        possível.
+      </p>
+
+      <form action="processa_pergunta.php" method="post" class="formulario">
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Insira o seu nome"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Insira o seu email"
+          required
+        />
+
+        <label for="pergunta">Pergunta:</label>
+        <textarea
+          id="pergunta"
+          name="pergunta"
+          rows="4"
+          placeholder="Escreva a sua pergunta..."
+          required
+        ></textarea>
+
+        <button type="submit">Enviar Pergunta</button>
+      </form>
+    </div>
+  </body>
+</html>
